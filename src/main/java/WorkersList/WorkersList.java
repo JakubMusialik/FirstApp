@@ -1,16 +1,22 @@
 package WorkersList;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class WorkersList {
+    private List<Workers> workersList = new ArrayList<>();
+
+    public void addWorkers(Workers workers) {
+        workersList.add(workers);
+    }
+
+    public void removeWorkers(Workers workers) {
+        workersList.remove(workers);
+    }
+
+    public void showWorkers() {
+        for(Workers workers : workersList) {
+            System.out.println(workers);
+        }
+    }
 }
-
-
-
-// LISTA PRACOWNIKOW DO KTOREJ KAZDY PRACOWNIK WPISUJE LICZBE GODZIN W DANY DZIEN W PRACY
-//  (PROGRAM SUMUJE GODZINY I ZWRACA WYPLATE W PLN)(STAWKA ZL/H OD GORNIE USTALONA)
-
-//          Pracownik "ABCDEF"
-//                    02.03.2021
-//                             10h
-//                              (stawka z góry ustalona w systemie)
-//                                      Feedback(Dzisiejszy zarobek)
-//                                              Feedback(Zarobek w skali miesiąca) <---- Reset po dniu wypłaty

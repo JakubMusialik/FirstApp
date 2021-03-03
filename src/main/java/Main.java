@@ -4,13 +4,11 @@ public class Main {
         System.out.println("A");
     }
 }
-/*
-            Projekt Szwalnia
-    1. Lista zadań (Zadania + Data + Co do dokończenia / skończone)
-    2. LISTA PRACOWNIKOW DO KTOREJ KAZDY PRACOWNIK WPISUJE LICZBE GODZIN W DANY DZIEN W PRACY(PROGRAM SUMUJE GODZINY I ZWRACA WYPLATE W PLN)(STAWKA ZL/H OD GORNIE USTALONA)
-    3. Zakładka wypłata (pokazuje b miesiac) (wyplaty dawne wrzuca do zupelnie innej tablicy lub pliku txt i to magazynuje odp miejsce na b msc)
-    4. Zakładka dodaj zadanie dla szefa (na czerwono f/e)
-    5. Lista - co zostało zrobione i kiedy
-    6.Szukanie tasków w list'cie po dacie i zadaniu
-    7.Tempo/dany produkt ( pomysl Lukasza). Dodamy liste klientow lukasza poda nam ilosci produktu/h jesli chlopcy uzupelnia dostana inf zwrotna typu "Too slow" "Jest ok" etc.
+/*   CO DALEJ
+1.implementacja listy pracowników przypisanych do projektu
+2.w klasie worker brakująca metoda string join
+3.Metoda random w klasie projects - FIX
+4.Jak powiązać klasę CLIENTS z PROJECTS ?? lista klientów w której przypiszemy każdemu K dany projekt
+5.Zastanowić się co z TaskListą
+6.Jeśli na ten moment wszystko gotowe, zagadać do Tomka o review.
  */
