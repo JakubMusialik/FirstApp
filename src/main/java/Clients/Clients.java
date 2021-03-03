@@ -1,6 +1,29 @@
 package Clients;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Clients {
+    private final String name;
+    private double valueOfOrders;
+    private boolean realised;
+    private Set<Clients> clients = new HashSet<>();
+
+    public Clients(String name) {
+        this.name = name;
+    }
+
+    public void addClients(Clients client) {
+        clients.add(client);
+    }
+
+    public void printClients() {
+        for (Clients client : clients) {
+            System.out.println(client);
+        }
+    }
+
+
 }
 
 
