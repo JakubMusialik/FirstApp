@@ -12,22 +12,34 @@ public class Clients {
     private double valueOfOrders;
     private boolean realised;
     private Set<Clients> clients = new HashSet<>();
+    private List<Projects> orders = new ArrayList<>();
 
     public Clients(String name) {
         this.name = name;
     }
 
-    public void addClients(Clients client) {
-        clients.add(client);
+    public void addProjects(Projects projects) {
+        orders.add(projects);
     }
 
-    public void printClients() {
-        for (Clients client : clients) {
-            System.out.println(client);
+    public void removeProjects(Projects projects) {
+        orders.remove(projects);
+    }
+
+    public void printProjects() {
+        for (Projects order : orders) {
+            System.out.println(order);
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Klient:" +  "\n" +
+                "Nazwa: '" + name + '\'' +
+                ", Łączna wartość zamówień: " + valueOfOrders +
+                ", Stopień realizacji: " + realised +
+                ", Zamówienia: " + orders.size();
+    }
 }
 
 
