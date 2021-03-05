@@ -1,6 +1,10 @@
 package Clients;
 
+import Projects.Projects;
+
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Clients {

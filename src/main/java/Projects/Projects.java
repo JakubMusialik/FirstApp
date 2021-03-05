@@ -1,6 +1,10 @@
 package Projects;
 
+import WorkersList.Workers;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class Projects {
@@ -30,12 +34,12 @@ public class Projects {
 //        return amount;
 //    }
 
-    public static int getDeadline() {
+    public int getDeadline() {
         return deadline;
     }
 
-    public static void setDeadline(int deadline) {
-        Projects.deadline = deadline;
+    public void setDeadline(int deadline) {
+        this.deadline = deadline;
     }
 
     public void newBiggerPrice(int percent) {             // METODA DO PODWYŻSZANIA CENY PROJEKTU
